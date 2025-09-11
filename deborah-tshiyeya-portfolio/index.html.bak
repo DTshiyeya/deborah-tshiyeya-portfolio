@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandni Chauhan | Portfolio</title>
+    <meta name="description" content="Professional portfolio of Chandni Chauhan, showcasing web development projects and skills">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/icons/favicon.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span>D</span>eborah
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                </ul>
+            </nav>
+            
+            <div class="menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="images/profile/profile.jpeg" alt="Chandni Chauhan" class="profile-img">
+                    </div>
+                    <h1 class="hero-title">Deborah Tshiyeya</h1>
+                    <h2 class="hero-subtitle">Portfolio</h2>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <p class="stat-label">Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <p class="stat-label">Cups of Coffee</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My Journey</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Web Developer & Designer</h3>
+                        <p>
+                            I'm a passionate web developer with over 2 years of experience creating beautiful, 
+                            functional websites. I specialize in frontend development with expertise in HTML, 
+                            CSS, JavaScript, and modern frameworks.
+                        </p>
+                        <p>
+                            My approach combines technical expertise with creative problem-solving to deliver 
+                            exceptional digital experiences. I'm constantly learning new technologies and 
+                            techniques to stay at the forefront of web development.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new design trends, contributing to 
+                            open-source projects, or learning new skills such as automations to make life easier.
+                        </p>
+                        
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary">Hire Me</a>
+                            <a href="documents/resume.pdf" download class="btn btn-outline">Download CV</a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span>Deborah Tshiyeya</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span>tshiyeya@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span>Johannesburg, South Africa</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education:</span>
+                            <span>NQF Level 5 in System Development, IT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <p class="section-subtitle">Beginner to Mid-Level Projects</p>
+                </div>
+                
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+                    <button class="filter-btn" data-filter="html-css-js">HTML/CSS/JS</button>
+                </div>
+                
+                <div class="portfolio-container">
+                    <!-- HTML & CSS Project 1 -->
+                    <div class="portfolio-item visible" data-category="html-css">
+                        <div class="portfolio-img">
+                            <img src="images/projects/DBTGurad.png" alt="Security Dashboard" onerror="this.style.display='none'">
+                            <div class="img-fallback">Security Dashboard</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Security Dashboard</h3>
+                                    <p>Static HTML & CSS Design</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/restaurant" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-restaurant.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Security Dashboard</h3>
+                            <p>Responsive security monitoring dashboard with threat metrics, risk visualization, and data tables. Built with semantic HTML5 and modern CSS</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- HTML & CSS Project 2 -->
+                    <div class="portfolio-item visible" data-category="html-css">
+                        <div class="portfolio-img">
+                            <img src="images/projects/dashboard.png" alt="Portfolio Template" onerror="this.style.display='none'">
+                            <div class="img-fallback">Business Analytics Dashboard</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Business Analytics Dashboard</h3>
+                                    <p>Business Metrics Dashboard</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/portfolio-template" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-portfolio-template.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Business Analytics Dashboard</h3>
+                            <p>Clean analytics dashboard displaying customer data, order statistics, and earnings metrics with responsive card layouts and data visualization components.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>CSS Grid</span>
+                                <span>Flexbox</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- HTML/CSS/JS Project 1 -->
+                    <div class="portfolio-item visible" data-category="html-css-js">
+                        <div class="portfolio-img">
+                            <img src="images/projects/project3.jpg" alt="Task Tracker" onerror="this.style.display='none'">
+                            <div class="img-fallback">Portfolio Website</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Portfolio Website</h3>
+                                    <p>Personal Brand Portfolio</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/task-tracker" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-task-tracker.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Portfolio Website</h3>
+                            <p>Professional developer portfolio with custom branding, project showcase, and skills presentation. Includes contact integration and responsive design for all devices.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Local Storage</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- HTML/CSS/JS Project 2 -->
+                    <div class="portfolio-item visible" data-category="html-css-js">
+                        <div class="portfolio-img">
+                            <img src="images/projects/project4.jpg" alt="Weather App" onerror="this.style.display='none'">
+                            <div class="img-fallback">Task Tracker</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Task Tracker</h3>
+                                    <p>Minimal Task Manager</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/weather-app" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-weather-app.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Task Tracker</h3>
+                            <p> Interactive task tracking system with add/delete functionality, local storage persistence, and dynamic task filtering using vanilla JavaScript.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HTML/CSS/JS Project 3 -->
+                    <div class="portfolio-item visible" data-category="html-css-js">
+                        <div class="portfolio-img">
+                            <img src="images/projects/project4.jpg" alt="Weather App" onerror="this.style.display='none'">
+                            <div class="img-fallback">Calculator</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Calculator</h3>
+                                    <p>Functional Calculator</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/weather-app" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-weather-app.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Calculator</h3>
+                            <p>Full-featured calculator with mathematical operations, memory functions, and keyboard support. JavaScript-powered calculation engine with visual feedback.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HTML/CSS/JS Project 4 -->
+                    <div class="portfolio-item visible" data-category="html-css-js">
+                        <div class="portfolio-img">
+                            <img src="images/projects/project4.jpg" alt="Weather App" onerror="this.style.display='none'">
+                            <div class="img-fallback">Quiz Game</div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Quiz Game</h3>
+                                    <p>Interactive Quiz Game</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/chandni/weather-app" target="_blank" class="portfolio-link">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                        <a href="https://chandni-weather-app.netlify.app" target="_blank" class="portfolio-link">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Quiz Game</h3>
+                            <p>Dynamic quiz platform with timer functionality, score tracking, and interactive question flow. JavaScript-powered game logic with animated transitions.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Technical Expertise</p>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skills-column">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3>Soft Skills</h3>
+                        <div class="soft-skills">
+                            <div class="soft-skill">
+                                <div class="skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h4>Communication</h4>
+                                <p>Excellent verbal and written communication skills</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Teamwork</h4>
+                                <p>Collaborative approach to problem-solving</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4>Creativity</h4>
+                                <p>Innovative solutions to complex challenges</p>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="skill-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Time Management</h4>
+                                <p>Efficient organization and prioritization</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3>Tools & Technologies</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-sass"></i>
+                                <span>Sass</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-wordpress"></i>
+                                <span>WordPress</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-server"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Contact Me</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects and ideas.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Johannesburg, South Africa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>tshiyeya@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+27 78 009 2094</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/chandni" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- Comming soon
+                            <a href="https://linkedin.com/in/chandni" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/chandni" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/chandni" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://dribbble.com/chandni" target="_blank" class="social-link">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            -->
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="error-message">Please enter a subject</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message">Please enter your message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        
+                        <div class="form-message success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Your message has been sent successfully!</p>
+                        </div>
+                        
+                        <div class="form-message error">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Something went wrong. Please try again later.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+        <div class="container">
+        <div class="resume-container">
+            <div class="resume-header">
+                <div class="profile-img">
+                    <img src="images/profile/profile.jpeg" alt="Deborah Tshiyeya">
+                </div>
+                <h1>Deborah Tshiyeya</h1>
+                <p>Junior Web Developer</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>tshiyeya@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 78 009 2094</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Johannesburg, South Africa</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/deborah-tshiyeya</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/deborah-tshiyeya</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-body">
+                <div class="resume-section">
+                    <h2 class="resume-section-title">
+                        <i class="fas fa-user"></i>
+                        Professional Summary
+                    </h2>
+                    <div class="objective">
+                        <p>Recent IT graduate with NQF Level 5 in System Development seeking an entry-level Web Developer position. Eager to apply strong foundation in HTML, CSS, JavaScript, and modern web technologies to create engaging user experiences. Quick learner with a passion for problem-solving and a commitment to writing clean, efficient code. Looking to contribute fresh perspectives and grow professionally in a collaborative development environment.</p>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h2 class="resume-section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h2>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <div class="item-title">NQF Level 4 in System Development</div>
+                            <div class="item-date">2024</div>
+                        </div>
+                        <div class="item-subtitle">Gauteng City College, Johannesburg</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Relevant coursework: Web Development Fundamentals, Database Design, Software Development Principles</li>
+                                <li>Final Project: Developed a responsive coffee shop website using HTML and CSS</li>
+                                <li>Achieved distinction in Web Development</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="item-header">
+                            <div class="item-title">NQF Level 5 in System Development</div>
+                            <div class="item-date">2025</div>
+                        </div>
+                        <div class="item-subtitle">Gauteng City College, Johannesburg</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Relevant coursework: Web Development Fundamentals, Database Design, JavaScript Programming, E-Business And Project Management</li>
+                                <li>Final Project: Yet to build a desktop application HTML, CSS and Javascript</li>
+                                <li>Yet to achieve distinction in Web Development and JavaScript modules</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h2 class="resume-section-title">
+                        <i class="fas fa-code"></i>
+                        Technical Skills
+                    </h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-laptop-code"></i> Frontend Technologies</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i> Tools & Platforms</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Chrome DevTools</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-user-cog"></i> Soft Skills</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Attention to Detail</span>
+                                <span class="skill-tag">Time Management</span>
+                                <span class="skill-tag">Adaptability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h2 class="resume-section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Projects
+                    </h2>
+                    <div class="project-item">
+                        <div class="item-header">
+                            <div class="item-title">Portfolio Website</div>
+                            <div class="item-date">2025</div>
+                        </div>
+                        <div class="item-subtitle">Personal Project</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Designed and developed a responsive personal portfolio website to showcase my web development projects and skills</li>
+                                <li>Implemented smooth scrolling navigation and interactive elements using JavaScript</li>
+                                <li>Optimized for performance and cross-browser compatibility</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/deborah-tshiyeya/portfolio" class="project-link">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <div class="item-title">DBTGuard Dashboard</div>
+                            <div class="item-date">2024 - 2025</div>
+                        </div>
+                        <div class="item-subtitle">Learning Project</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Designed and developed a responsive cybersecurity dashboard interface for DBTGuard, a threat monitoring system.</li>
+                                <li>Implemented a fixed sidebar navigation, dynamic grid layouts, and custom-styled data cards to visualize file-based risk metrics.</li>
+                                <li>Integrated conic-gradient donut charts and simulated threat graphs to represent virus distribution and device vulnerabilities.</li>
+                                <li>Engineered a clean, dark-themed UI with semantic HTML and scalable CSS architecture for maintainability and performance.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/deborah-tshiyeya/weather-dashboard" class="project-link">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="item-header">
+                            <div class="item-title">Dashboard</div>
+                            <div class="item-date">2024 - 2025</div>
+                        </div>
+                        <div class="item-subtitle">Learning Project</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Designed and developed a responsive cybersecurity dashboard interface for DBTGuard, a threat monitoring system.</li>
+                                <li>Implemented a fixed sidebar navigation, dynamic grid layouts, and custom-styled data cards to visualize file-based risk metrics.</li>
+                                <li>Integrated conic-gradient donut charts and simulated threat graphs to represent virus distribution and device vulnerabilities.</li>
+                                <li>Engineered a clean, dark-themed UI with semantic HTML and scalable CSS architecture for maintainability and performance.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/deborah-tshiyeya/weather-dashboard" class="project-link">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <div class="item-title">Quiz Game</div>
+                            <div class="item-date">2024 - 2025</div>
+                        </div>
+                        <div class="item-subtitle">Learning Project</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Developed a fully responsive, interactive landing page for a quiz-based web application using HTML, CSS, and JavaScript.</li>
+                                <li>Designed a dark-themed interface with animated buttons, dynamic navigation, and structured content sections to showcase game features like lifelines, leaderboards, and prize withdrawals.</li>
+                                <li>Implemented JavaScript-driven interactivity for enhanced user engagement and smooth UI transitions.</li>
+                                <li>Focused on gamification principles, visual branding, and conversion-oriented layout to support user retention and gameplay motivation.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/deborah-tshiyeya/task-manager" class="project-link">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h2 class="resume-section-title">
+                        <i class="fas fa-certificate"></i>
+                        Certifications
+                    </h2>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <div class="item-title">System Development NQF Level 5</div>
+                            <div class="item-date">2024</div>
+                        </div>
+                        <div class="item-subtitle">Gauteng City College</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                
+                <div class="resume-download">
+                    <a href="documents/resume.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Full Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <span>D</span>eborah
+                    </a>
+                    <p>Creating digital experiences that inspire and engage.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>tshiyeya@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+27 78 009 2094</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Johannesburg, South Africa</span>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/chandni" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!--Coming soon
+                        <a href="https://linkedin.com/in/chandni" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/chandni" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <a href="https://instagram.com/chandni" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://dribbble.com/chandni" target="_blank" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deborah Tshiyeya. All rights reserved.</p>
+                <p>Designed and developed with <i class="fas fa-heart"></i> by Deborah</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="Project Image" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
